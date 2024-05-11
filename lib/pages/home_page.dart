@@ -3,6 +3,9 @@ import 'package:ngdemo23/pages/lesson1/bloc_provider_page.dart';
 
 import 'lesson1/multi_bloc_provider_page.dart';
 import 'lesson2/bloc_builder_page.dart';
+import 'lesson3/multi_repository_page.dart';
+import 'lesson3/single_repository_page.dart';
+import 'lesson4/bloc_selector_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -79,7 +82,9 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue,
                   textColor: Colors.white,
                   onPressed: (){
-
+                    Navigator.push(context,MaterialPageRoute(
+                        builder:(_)=>SingleRepositoryPage(),
+                    ),);
                   },
                 ),
               ),
@@ -92,7 +97,23 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue,
                   textColor: Colors.white,
                   onPressed: (){
-
+                    Navigator.push(context,MaterialPageRoute(
+                      builder:(_)=>MultiRepositoryPage(),
+                    ),);
+                  },
+                ),
+              ), Container(
+                margin: EdgeInsets.only(top:10),
+                height: 45,
+                width: double.infinity,
+                child: MaterialButton(
+                  child: Text("Bloc Selector"),
+                  color: Colors.blue,
+                  textColor: Colors.white,
+                  onPressed: (){
+                    Navigator.push(context,MaterialPageRoute(
+                      builder:(_)=>BlocSelectorPage(),
+                    ),);
                   },
                 ),
               ),
@@ -105,23 +126,13 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue,
                   textColor: Colors.white,
                   onPressed: (){
-
+                    Navigator.push(context,MaterialPageRoute(
+                      builder:(_)=>SingleRepositoryPage(),
+                    ),);
                   },
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(top:10),
-                height: 45,
-                width: double.infinity,
-                child: MaterialButton(
-                  child: Text("Bloc Container"),
-                  color: Colors.blue,
-                  textColor: Colors.white,
-                  onPressed: (){
 
-                  },
-                ),
-              ),
               Container(
                 margin: EdgeInsets.only(top:10),
                 height: 45,
@@ -131,7 +142,9 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue,
                   textColor: Colors.white,
                   onPressed: (){
-
+                    Navigator.push(context,MaterialPageRoute(
+                      builder:(_)=>SingleRepositoryPage(),
+                    ),);
                   },
                 ),
               ),
@@ -144,7 +157,9 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue,
                   textColor: Colors.white,
                   onPressed: (){
-
+                    Navigator.push(context,MaterialPageRoute(
+                      builder:(_)=>SingleRepositoryPage(),
+                    ),);
                   },
                 ),
               ),
@@ -157,7 +172,9 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue,
                   textColor: Colors.white,
                   onPressed: (){
-
+                    Navigator.push(context,MaterialPageRoute(
+                      builder:(_)=>SingleRepositoryPage(),
+                    ),);
                   },
                 ),
               ),
