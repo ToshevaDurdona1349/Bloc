@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:ngdemo23/pages/lesson1/bloc_provider_page.dart';
+import 'package:ngdemo23/pages/lesson6/bloc_consumer_page.dart';
 
 import 'lesson1/multi_bloc_provider_page.dart';
 import 'lesson2/bloc_builder_page.dart';
 import 'lesson3/multi_repository_page.dart';
 import 'lesson3/single_repository_page.dart';
 import 'lesson4/bloc_selector_page.dart';
+import 'lesson5/bloc_lisener_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -127,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                   textColor: Colors.white,
                   onPressed: (){
                     Navigator.push(context,MaterialPageRoute(
-                      builder:(_)=>SingleRepositoryPage(),
+                      builder:(_)=>BlocListenerPage(),
                     ),);
                   },
                 ),
@@ -143,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                   textColor: Colors.white,
                   onPressed: (){
                     Navigator.push(context,MaterialPageRoute(
-                      builder:(_)=>SingleRepositoryPage(),
+                      builder:(_)=>BlocConsumerPage(),
                     ),);
                   },
                 ),
