@@ -8,6 +8,8 @@ import 'lesson3/multi_repository_page.dart';
 import 'lesson3/single_repository_page.dart';
 import 'lesson4/bloc_selector_page.dart';
 import 'lesson5/bloc_lisener_page.dart';
+import 'lesson7/movie_page.dart';
+import 'lesson8/currency_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -160,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                   textColor: Colors.white,
                   onPressed: (){
                     Navigator.push(context,MaterialPageRoute(
-                      builder:(_)=>SingleRepositoryPage(),
+                      builder:(_)=>MoviePage(),
                     ),);
                   },
                 ),
@@ -175,7 +177,7 @@ class _HomePageState extends State<HomePage> {
                   textColor: Colors.white,
                   onPressed: (){
                     Navigator.push(context,MaterialPageRoute(
-                      builder:(_)=>SingleRepositoryPage(),
+                      builder:(_)=>ConcurrencyPage(),
                     ),);
                   },
                 ),
